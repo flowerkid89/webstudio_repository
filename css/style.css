@@ -1,0 +1,29 @@
+/*основний текст #212121*/
+/*колір тексту абзацу #757575*/
+/*синій колір *#2196F3*/
+/*білий колір #FFFFFF*/
+/* вторичний колір фону #F5F4FA*/
+
+.list {
+  list-style: none;
+}
+body{
+  color:#212121;
+  background-color: #fff;
+}
+/*спан лого*/
+.logo{
+  color:#2196F3;
+}
+/* стайл нав селектор*/
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+color: #2196F3;
+}
+/*Секційні стили*/
+.section-tittle{
+  color: #212121;
+}
