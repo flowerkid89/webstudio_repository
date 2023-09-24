@@ -1,0 +1,63 @@
+/*основний текст #212121*/
+/*колір тексту абзацу #757575*/
+/*синій колір *#2196F3*/
+/*білий колір #FFFFFF*/
+/* вторичний колір фону #F5F4FA*/
+:root{
+  --primery-text-color:#212121;
+  --tittle-text-color:#757575;
+  --href-text-color:#2196F3;
+  --white-color:#FFFFFF;
+  --secondary-background-color:#F5F4FA;
+  --work-bg-color: rgba(47, 48, 58, 0.80);
+  --hero-bg-color: #2F303A;
+}
+
+.list {
+  list-style: none;
+}
+body{
+  color: var(--primery-text-color);
+  background-color: var(--white-color);
+}
+/*спан лого*/
+.logo{
+  color:var(--href-text-color);
+}
+
+/* стайл нав селектор*/
+.site-nav .link {
+  color: var(--primery-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+color: var(--href-text-color);
+}
+.site-nav .link.current{
+  color: var(--href-text-color);
+}
+.auth-nav .link{
+  color: var(--primery-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+  color: var(--href-text-color);
+}
+/* Button */
+.button {
+  color: var(--primery-text-color);
+  background-color: var(--secondary-background-color);
+  }
+  .button.primary{
+    color: var(--white-color);
+    background-color: var(--href-text-color);
+  }
+  /* Футер */
+  .footer-media .link:hover,
+  .footer-media .link:focus{
+    color: var(--href-text-color);
+  }
+  .footer-media .call{
+    color: var(--white-color);
+    background-color: var(--hero-bg-color);
+  }
