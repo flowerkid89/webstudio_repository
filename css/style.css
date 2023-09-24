@@ -3,27 +3,62 @@
 /*синій колір *#2196F3*/
 /*білий колір #FFFFFF*/
 /* вторичний колір фону #F5F4FA*/
+:root{
+  --primery-text-color:#212121;
+  --tittle-text-color:#757575;
+  --href-text-color:#2196F3;
+  --white-color:#FFFFFF;
+  --secondary-background-color:#F5F4FA;
+  --work-bg-color: rgba(47, 48, 58, 0.80);
+}
 
 .list {
   list-style: none;
 }
 body{
-  color:#212121;
-  background-color: #fff;
+  color: var(--primery-text-color);
+  background-color: var(--white-color);
 }
 /*спан лого*/
 .logo{
-  color:#2196F3;
+  color:var(--href-text-colorhref);
 }
+
 /* стайл нав селектор*/
 .site-nav .link {
-  color: #212121;
+  color: var(--primery-text-color);
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
-color: #2196F3;
+color: var(--href-text-colorhref);
+}
+/* Секція героя */
+.hero-title{
+  color: var(--primery-text-color);
 }
 /*Секційні стили*/
 .section-tittle{
-  color: #212121;
+  color: var(--primery-text-color);
+}
+/* Особливости */
+.feature-list .tittle{
+  color: var(--primery-text-color);
+}
+.feature-list .text{
+  color: var(--tittle-text-color);
+}
+.team-list .section-tittle{
+  color: var(--primery-text-color);
+}
+.section-tittle .activity{
+  color: var(--tittle-text-color);
+}
+/* Button */
+ .button {
+color: var(--primery-text-color);
+background-color: var(--secondary-background-color);
+}
+.button.primary{
+  color: var(--white-color);
+  background-color: var(--href-text-color);
 }
