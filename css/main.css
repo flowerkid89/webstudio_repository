@@ -52,10 +52,11 @@ body {
 .section {
   color: var(--primery-text-color);
 }
-/* Особливости */
-.feature-list .title {
-  color: var(--primery-text-color);
+.section .text {
+  color: var(--title-text-color);
 }
+/* Особливости */
+
 .feature-list .text {
   color: var(--title-text-color);
 }
@@ -73,16 +74,13 @@ body {
 .section .activity {
   color: var(--title-text-color);
 }
-.team-list {
-  color: var(--primery-text-color);
-}
-.team-list .link:hover,
-.team-list .link:focus {
+.link:hover,
+.link:focus {
   color: var(--href-text-color);
 }
 /* Постійні кліенти */
-.clients-list .link:hover,
-.clients-list .link:focus {
+.clients-list :hover,
+.clients-list :focus {
   background-color: var(--href-text-color);
 }
 /* Футер */
@@ -94,3 +92,4 @@ body {
   color: var(--white-color);
   background-color: var(--hero-bg-color);
 }
+/* час відео 1:39 */
