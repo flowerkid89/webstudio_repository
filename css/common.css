@@ -14,10 +14,26 @@
 body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
 }
 /*спан лого*/
 .logo {
-  color: var(--href-text-colorhref);
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.logo .letter {
+  color: var(--href-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.78px;
 }
 
 /* стайл нав селектор*/
