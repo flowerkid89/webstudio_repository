@@ -27,8 +27,7 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  font-style: normal;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 0.78px;
 }
 .logo .letter {
@@ -36,17 +35,15 @@ body {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  font-style: normal;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 0.78px;
 }
 /* стайл нав селектор*/
 .site-nav {
   color: var(--primery-text-color);
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 0.28px;
 }
 .site-nav :hover,
@@ -59,9 +56,8 @@ body {
 .auth-nav {
   color: var(--primery-text-color);
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 0.28px;
 }
 .auth-nav :hover,
@@ -72,18 +68,40 @@ body {
 .hero-title {
   color: var(--white-color);
   background-color: var(--hero-bg-color);
+
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
 }
 /*Секційні стили*/
 .section {
   color: var(--primery-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
+/* Параграфи */
 .section .text {
   color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71; /* 171.429% */
+  letter-spacing: 0.42px;
 }
-/* Особливости */
-
-.feature-list .text {
-  color: var(--title-text-color);
+/* Заголовки  H3 */
+.section .section-title {
+  color: var(--secondary-background-color);
+  background-color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 
 /* Button */
@@ -94,6 +112,10 @@ body {
 .button.primary {
   color: var(--white-color);
   background-color: var(--href-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
 }
 /* Навігація соц мереж під Нашою командою */
 .section .activity {
