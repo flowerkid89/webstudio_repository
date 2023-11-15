@@ -29,14 +29,16 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.78px;
+  text-decoration: none;
 }
-.logo .letter {
+.logo-web {
   color: var(--href-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.78px;
+  text-decoration: none;
 }
 /* стайл нав селектор*/
 .site-nav {
@@ -45,12 +47,13 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.28px;
+  text-decoration: none;
 }
-.site-nav :hover,
-.site-nav :focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--href-text-color);
 }
-.site-nav .current {
+.site-nav .link.current {
   color: var(--href-text-color);
 }
 .auth-nav {
@@ -59,6 +62,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.28px;
+  text-decoration: none;
 }
 .auth-nav :hover,
 .auth-nav :focus {
@@ -85,8 +89,21 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+/* Team */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  color: var(--primery-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
 /* Параграфи */
-.section .text {
+.section-text {
   color: var(--title-text-color);
   font-size: 14px;
   font-weight: 400;
@@ -94,7 +111,7 @@ body {
   letter-spacing: 0.42px;
 }
 /* Заголовки  H3 */
-.section .section-title {
+.section-title {
   color: var(--secondary-background-color);
   background-color: #000000;
   font-size: 14px;
@@ -105,11 +122,8 @@ body {
 }
 
 /* Button */
+
 .button {
-  color: var(--primery-text-color);
-  background-color: var(--secondary-background-color);
-}
-.button.primary {
   color: var(--white-color);
   background-color: var(--href-text-color);
   font-size: 16px;
@@ -118,11 +132,17 @@ body {
   line-height: 1.88;
 }
 /* Навігація соц мереж під Нашою командою */
-.section .activity {
+.section-profession {
   color: var(--title-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
 }
-.link:hover,
-.link:focus {
+.link-user:hover,
+.link-user:focus {
   color: var(--href-text-color);
 }
 /* Постійні кліенти */
@@ -131,11 +151,12 @@ body {
   background-color: var(--href-text-color);
 }
 /* Футер */
-.footer-media .link:hover,
-.footer-media .link:focus {
+.link:hover,
+.link:focus {
   color: var(--href-text-color);
+  text-decoration: none;
 }
-.footer-media .call-text {
+.social-network-text {
   color: var(--white-color);
   background-color: var(--hero-bg-color);
 }
