@@ -16,6 +16,21 @@
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+.link-user {
+  text-decoration: none;
+}
+h2 {
+  color: var(--primery-text-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+}
 body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
@@ -29,7 +44,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.78px;
-  text-decoration: none;
 }
 .logo-web {
   color: var(--href-text-color);
@@ -38,7 +52,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.78px;
-  text-decoration: none;
 }
 /* стайл нав селектор*/
 .site-nav {
@@ -52,6 +65,7 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--href-text-color);
+  text-decoration: none;
 }
 .site-nav .link.current {
   color: var(--href-text-color);
@@ -89,6 +103,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
 /* Team */
 .team {
   background-color: #f5f4fa;
@@ -102,7 +117,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
-/* Параграфи */
+/* Параграфи в розділі особливості*/
 .section-text {
   color: var(--title-text-color);
   font-size: 14px;
@@ -130,6 +145,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 1.88;
+  text-decoration: none;
 }
 /* Навігація соц мереж під Нашою командою */
 .section-profession {
@@ -150,11 +166,10 @@ body {
 .clients-list :focus {
   background-color: var(--href-text-color);
 }
-/* Футер */
+/* Ссилки */
 .link:hover,
 .link:focus {
   color: var(--href-text-color);
-  text-decoration: none;
 }
 .social-network-text {
   color: var(--white-color);
