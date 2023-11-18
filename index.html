@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- Шапка профілю-->
-    <header>
-      <nav>
+    <header class="page-header">
+      <nav class="container">
         <a href="./index.html" class="link">
-          <p class="logo"><span class="logo-web">Web </span>Studio</p>
+          <p class="logo"><span class="accent">Web</span>Studio</p>
         </a>
         <!--Навігація на другі сторінкі-->
         <ul class="site-nav list">
@@ -37,57 +36,58 @@
     <main>
       <!--Герой сайту-->
       <section class="hero">
-        <img src="" alt="" />
         <h1 class="hero-title">Effective solutions </br> for your business</h1>
-        <a href="" class="button"> Order a service</a>
+        <a href="" class="button"> Заказати послугу</a>
       </section>
       <!--Особливості-->
       <section class="section">
-        <h2>Особливості</h2>
+       <div class="container">
+        <h2 class="hidden-header">Особливості</h2>
         <ul class="list">
           <li>
-            <img src="./imagens/antenna1.svg" alt="" />
-            <h3 class="section-title">Attention to detail</h3>
+            <h3 class="title">Attention to detail</h3>
             <p class="section-text">
               Ideological considerations, as well as the beginning of daily work
               on the formation of a position.
             </p>
+            <!-- <img src="./imagens/antenna1.svg" alt="" /> -->
           </li>
           <li>
-            <img src="./imagens/clock1.svg" alt="" />
-            <h3 class="section-title">Punctuality</h3>
+            <h3 class="title">Punctuality</h3>
             <p class="section-text">
               The task of the organization, in particular, the framework and
               place of personnel training entails.
             </p>
+            <!-- <img src="./imagens/clock1.svg" alt="" /> -->
           </li>
           <li>
-            <img src="./imagens/diagram1.svg" alt="" />
-            <h3 class="section-title">Planning</h3>
+            <h3 class="title">Planning</h3>
             <p class="section-text">
               In the same way, consultation with a broad asset is largely
               determined.
             </p>
+            <!-- <img src="./imagens/diagram1.svg" alt="" /> -->
           </li>
           <li>
-            <img src="./imagens/astronaut1.svg" alt="" />
-            <h3 class="section-title">Modern technologies</h3>
+            <h3 class="title">Modern technologies</h3>
             <p class="section-text">
               The importance of these problems is so obvious that the
               implementation of planned tasks.
             </p>
+            <!-- <img src="./imagens/astronaut1.svg" alt="" /> -->
           </li>
         </ul>
+       </div>
       </section>
       <!--що ми робимо-->
       <section class="section">
-        <h2>What do we do?</h2>
+        <h2 class="section-title">What do we do?</h2>
         <img src="./imagens/box1.jpg" alt="" width="370" />
-        <h3 class="section-title">Десктопные приложения</h3>
+        <h3 class="title">Десктопные приложения</h3>
         <img src="./imagens/box2.jpg" alt="" width="370" />
-        <h3 class="section-title">Мобильные приложения</h3>
+        <h3 class="title">Мобильные приложения</h3>
         <img src="./imagens/box3.jpg" alt="" width="370" />
-        <h3 class="section-title">Дизайнерское решение</h3>
+        <h3 class="title">Дизайнерское решение</h3>
       </section>
       <!--Наша команда-->
       <section class="section team">
@@ -201,7 +201,7 @@
       <!-- Адресса компанії-->
       <div>
         <a href="./index.html" class="link">
-          <p class="logo"><span class="logo-web">Web </span>Studio</p>
+          <p class="logo"><span class="accent">Web</span>Studio</p>
         </a>
         <address>г.Киев,пр-т Леси Украинки,26</address>
         <address>
@@ -225,7 +225,7 @@
       <div>
         <p class="social-network-text">Подписатся на рассылку</p>
         <a href=""> E-mail</a>
-        <a href="" class="button">Подписатся</a>
+        <a href="" class="button-secondary">Подписатся</a>
       </div>
     </footer>
   </body>
