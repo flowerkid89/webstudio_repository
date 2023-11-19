@@ -30,8 +30,13 @@ html {
 }
 .link-user {
   text-decoration: none;
+  text-align: center;
 }
-
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
@@ -44,8 +49,10 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
+  max-width: 1200px;
   outline: 2px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*спан лого*/
 .logo {
@@ -118,24 +125,20 @@ body {
   line-height: 1.2;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
-
-/* Team */
-.team {
-  background-color: #f5f4fa;
+.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.team-title {
+.section-work {
   color: var(--primery-text-color);
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
+
 /* Параграфи в розділі особливості*/
 .section-text {
   color: var(--title-text-color);
@@ -144,10 +147,13 @@ body {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 
+  padding-top: 0;
+  padding-bottom: 94px;
+
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
 }
-/* Заголовки  H3 */
+/* Заголовки  H3 Особливості */
 .title {
   color: var(--secondary-background-color);
   background-color: #000000;
@@ -159,8 +165,27 @@ body {
 
   margin-top: 0;
   margin-bottom: 10px;
+
+  padding-top: 94px;
+  padding-bottom: 0;
 }
-/* Параграф H2 */
+/* Заголовки H3 в Що ми робимо */
+.work-title {
+  color: var(--secondary-background-color);
+  background-color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  padding-top: 0;
+  padding-bottom: 94px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Параграф H2 в що ми робимо*/
 .section-title {
   color: var(--primery-text-color);
   text-align: center;
@@ -171,6 +196,9 @@ body {
   letter-spacing: 1.08px;
 
   margin-top: 0;
+  margin-bottom: 50px;
+
+  padding-top: 94px;
 }
 .hidden-header {
   color: var(--primery-text-color);
@@ -180,6 +208,42 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1.08px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  width: 0;
+  height: 0;
+}
+/* Team */
+.section-team {
+  background-color: #f5f4fa;
+}
+/* Заголовок H3 В наша команда */
+.team-title {
+  color: var(--primery-text-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+/* Заголовок H2 в наша команда */
+.team-subtitle {
+  color: var(--primery-text-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -200,6 +264,8 @@ body {
   font-weight: 700;
   line-height: 1.88;
   text-decoration: none;
+
+  margin-bottom: 200px;
 }
 .button-secondary {
   color: var(--white-color);
