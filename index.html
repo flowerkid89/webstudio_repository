@@ -11,25 +11,27 @@
   <body>
     <!-- Шапка профілю-->
     <header class="page-header">
-      <nav class="container">
+      <nav class="container main-nav">
         <a href="./index.html" class="link">
           <p class="logo"><span class="accent">Web</span>Studio</p>
         </a>
         <!--Навігація на другі сторінкі-->
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link current">Studio</a></li>
-          <li><a href="./Portfolio.html"class="link"  >Portfolio</a></li>
-          <li><a href="" class="link" >Contacts</a></li>
+          <li class="item"><a href="./index.html" class="link current">Studio</a></li>
+          <li class="item"><a href="./Portfolio.html"class="link"  >Portfolio</a></li>
+          <li class="item"><a href="" class="link" >Contacts</a></li>
         </ul>
         <ul class="auth-nav list">
-          <li>
-            <a href="info@devstudio.com" class="link"><img src="./imagens/hover.svg" alt="" />
+          <li class="item">
+            <a href="info@devstudio.com" class="link">
+              <!-- <img src="./imagens/hover.svg" alt="" /> -->
               info@devstudio.com 
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="+38-096-111-11-11" class="link">
-            <img src="./imagens/smartphone.svg" alt="" />+380-96-111-11-11 </a>
+            <!-- <img src="./imagens/smartphone.svg" alt="" />  -->
+            +380-96-111-11-11 </a>
           </li>
         </ul>
       </nav>
@@ -41,37 +43,37 @@
         <a href="" class="button"> Заказати послугу</a>
       </section>
       <!--Особливості-->
-      <section class="section">
+      <section class="section features">
        <div class="container">
         <h2 class="hidden-header">Особливості</h2>
-        <ul>
-          <li class="list">
+        <ul class="features-item">
+          <li class="features-list list">
             <h3 class="title">Attention to detail</h3>
-            <p class="section-text">
+            <p class="features-text">
               Ideological considerations, as well as the beginning of daily work
               on the formation of a position.
             </p>
             <!-- <img src="./imagens/antenna1.svg" alt="" /> -->
           </li>
-          <li class="list">
+          <li class="features-list list">
             <h3 class="title">Punctuality</h3>
-            <p class="section-text">
+            <p class="features-text">
               The task of the organization, in particular, the framework and
               place of personnel training entails.
             </p>
             <!-- <img src="./imagens/clock1.svg" alt="" /> -->
           </li>
-          <li class="list">
+          <li class="features-list list">
             <h3 class="title">Planning</h3>
-            <p class="section-text">
+            <p class="features-text">
               In the same way, consultation with a broad asset is largely
               determined.
             </p>
             <!-- <img src="./imagens/diagram1.svg" alt="" /> -->
           </li>
-          <li class="list">
+          <li class="features-list list">
             <h3 class="title">Modern technologies</h3>
-            <p class="section-text">
+            <p class="features-text">
               The importance of these problems is so obvious that the
               implementation of planned tasks.
             </p>
@@ -81,123 +83,114 @@
        </div>
       </section>
       <!--що ми робимо-->
-      <section class="section">
-        <h2 class="section-title">Що ми робимо</h2>
-        <img src="./imagens/box1.jpg" alt="" width="370" />
+    <h2 class="section-title">Що ми робимо</h2>
+    <div class="container">
+      <section class="section work">
+        <ul class="work">
+          <li class="work-list list">
+            <img src="./imagens/box1.jpg" alt="" width="370"  />
         <h3 class="work-title">Десктопные приложения</h3>
-        <img src="./imagens/box2.jpg" alt="" width="370" />
-        <h3 class="work-title">Мобильные приложения</h3>
-        <img src="./imagens/box3.jpg" alt="" width="370" />
-        <h3 class="work-title">Дизайнерское решение</h3>
+          </li>
+        <li class="work-list list">
+          <img src="./imagens/box2.jpg" alt="" width="370" />
+          <h3 class="work-title">Мобильные приложения</h3></li>
+        <li class="work-list list">
+          <img src="./imagens/box3.jpg" alt="" width="370" />
+          <h3 class="work-title">Дизайнерское решение</h3></li>
+        </ul>
       </section>
+    </div>
       <!--Наша команда-->
-      <section class="section-team">
-        <h2 class="team-title">Наша команда</h2>
-        <div class="container">
-          <ul>
-            <li class="list">
-              <img src="./imagens/img.jpg" alt="" width="270" />
-              <h3 class="team-subtitle">
-                Игорь Демьяненко <span class="section-profession">Product Designer</span>
-              </h3>
-              <ul>
-                <li class="list">
+      <h2 class="team-title">Наша команда</h2>
+      <div class="container">
+        <section class="section team">
+            <ul class="team-item">
+              <li class="team-list list">
+                <img src="./imagens/img.jpg" alt="" width="270" />
+                <h3 class="team-subtitle">
+                  Игорь Демьяненко <span class="section-profession">Product Designer</span>
+                </h3> 
+                <div class="imagen">    
+                      <img src="./imagens/Ellipse.svg" alt="" />
+                    <!-- <a href="" class="link-user">Instgram</a> -->
+                       <img src="./imagens/twitter1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Twitter</a> -->
+                     <img src="./imagens/facebook1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Faceboock</a> -->
+                      <img src="./imagens/linkedin1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Ellipse</a> -->
+                  </div> 
+                  </li>
+                
+               <li class="team-list list">
+                <img src="./imagens/img(1).jpg" alt="" width="270" />
+                <h3 class="team-subtitle">Ольга Репина <span class="section-profession">Frontend Developer</span>
+                </h3>
+                <div class="imagen">
                   <img src="./imagens/Ellipse.svg" alt="" />
-                  <a href="" class="link-user">Instgram</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(1).svg" alt="" />
-                  <a href="" class="link-user">Twitter</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(2).svg" alt="" />
-                  <a href="" class="link-user">Faceboock</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(3).svg" alt="" />
-                  <a href="" class="link-user">Ellipse</a>
-                </li>
-              </ul>
-              <img src="./imagens/img(1).jpg" alt="" width="270" />
-              <h3 class="team-subtitle">
-                Ольга Репина <span class="section-profession">Frontend Developer</span>
-              </h3>
-              <ul>
-                <li class="list">
-                  <img src="./imagens/Ellipse.svg" alt="" />
-                  <a href="" class="link-user">Instgram</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(1).svg" alt="" />
-                  <a href="" class="link-user">Twitter</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(2).svg" alt="" />
-                  <a href="" class="link-user">Faceboock</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(3).svg" alt="" />
-                  <a href="" class="link-user">Ellipse</a>
-                </li>
-              </ul>
-              <img src="./imagens/img(2).jpg" alt="" width="270" />
-              <h3 class="team-subtitle">
-                Николай тарасов <span class="section-profession">Marketing</span>
-              </h3>
-              <ul>
-                <li class="list">
-                  <img src="./imagens/Ellipse.svg" alt="" />
-                  <a href="" class="link-user">Instgram</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(1).svg" alt="" />
-                  <a href="" class="link-user">Twitter</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(2).svg" alt="" />
-                  <a href="" class="link-user">Faceboock</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(3).svg" alt="" />
-                  <a href="" class="link-user">Ellipse</a>
-                </li>
-              </ul>
-              <img src="./imagens/img(3).jpg" alt="" width="270" />
-              <h3 class="team-subtitle">
-                Михаил Ермаков <span class="section-profession">UI Designer</span>
-              </h3>
-              <ul>
-                <li class="list">
-                  <img src="./imagens/Ellipse.svg" alt="" />
-                  <a href="" class="link-user">Instgram</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(1).svg" alt="" />
-                  <a href="" class="link-user">Twitter</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(2).svg" alt="" />
-                  <a href="" class="link-user">Faceboock</a>
-                </li>
-                <li class="list">
-                  <img src="./imagens/Ellipse(3).svg" alt="" />
-                  <a href="" class="link-user">Ellipse</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
+                <!-- <a href="" class="link-user">Instgram</a> -->
+                <img src="./imagens/twitter1.svg" alt="" />
+                <!-- <a href="" class="link-user">Twitter</a> -->
+                <img src="./imagens/facebook1.svg" alt="" />
+                <!-- <a href="" class="link-user">Faceboock</a> -->
+                <img src="./imagens/linkedin1.svg" alt="" />
+                <!-- <a href="" class="link-user">Ellipse</a> -->
+                </div>
+               </li>
+                  
+                <li class="team-list list"> 
+                  <img src="./imagens/img(2).jpg" alt="" width="270"  />
+                  <h3 class="team-subtitle">
+                    Николай тарасов <span class="section-profession">Marketing</span>
+                  </h3>
+                     <div class="imagen">
+                      <img src="./imagens/Ellipse.svg" alt="" />
+                      <!-- <a href="" class="link-user">Instgram</a> -->
+                      <img src="./imagens/twitter1.svg" alt="" />
+                      <!-- <a href="" class="link-user">Twitter</a> -->
+                      <img src="./imagens/facebook1.svg" alt="" />
+                      <!-- <a href="" class="link-user">Faceboock</a> -->
+                      <img src="./imagens/linkedin1.svg" alt="" />
+                      <!-- <a href="" class="link-user">Ellipse</a> -->
+                     </div>
+                  </li>
+                <li class="team-list list">
+                  <img src="./imagens/img(3).jpg" alt="" width="270" />
+                <h3 class="team-subtitle">
+                  Михаил Ермаков <span class="section-profession">UI Designer</span>
+                </h3>
+                  <div class="imagen">
+                    <img src="./imagens/Ellipse.svg" alt="" />
+                    <!-- <a href="" class="link-user">Instgram</a> -->
+                    <img src="./imagens/twitter1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Twitter</a> -->
+                    <img src="./imagens/facebook1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Faceboock</a> -->
+                    <img src="./imagens/linkedin1.svg" alt="" />
+                    <!-- <a href="" class="link-user">Ellipse</a> -->
+                  </div>
+              </li>
+            </ul>
+        </section>
+      </div>
       <!--Постійні клієнти-->    
      <div class="container">
-      <div class="clients-list padding">
+      <div class="clients-list regular">
         <h2 class="team-title">Постійні клієнти</h2>
-        <a href="" ><img src="./imagens/Client1.svg" alt="" /></a>
-        <a href="" ><img src="./imagens/Client2.svg" alt="" /></a>
-        <a href="" ><img src="./imagens/Client3.svg" alt="" /></a>
-        <a href="" ><img src="./imagens/Client4.svg" alt="" /></a>
-        <a href="" ><img src="./imagens/Client5.svg" alt="" /></a>
-        <a href="" ><img src="./imagens/Client6.svg" alt="" /></a>
+       <div class="regular-costumers">
+        <a href="" >
+          <img src="./imagens/Client1.svg" alt="" /></a>
+        <a href="" >
+          <img src="./imagens/Client2.svg" alt="" /></a>
+        <a href="" >
+          <img src="./imagens/Client3.svg" alt="" /></a>
+        <a href="" >
+          <img src="./imagens/Client4.svg" alt="" /></a>
+        <a href="" >
+          <img src="./imagens/Client5.svg" alt="" /></a>
+        <a href="" >
+          <img src="./imagens/Client6.svg" alt="" /></a>
+       </div>
       </div>
      </div>
     </main>
