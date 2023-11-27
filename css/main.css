@@ -194,7 +194,6 @@ body {
 } */
 .features-item {
   display: flex;
-  flex-wrap: inherit;
   background-color: #000000;
 }
 /* .features-item .title {
@@ -239,7 +238,7 @@ body {
 .work {
   display: flex;
 
-  width: 1170px;
+  /* width: 1170px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -285,8 +284,8 @@ body {
 }
 .team-item {
   display: flex;
-  flex-wrap: wrap;
-  width: 1170px;
+
+  /* width: 1170px; */
   margin-left: auto;
   margin-right: auto;
   margin-right: -30px;
@@ -295,16 +294,15 @@ body {
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
 }
-.team-list > .imagen {
+.team-list > .team-social {
   display: flex;
-  justify-content: space-around;
 
   padding-left: 44px;
   padding-right: 44px;
   padding-bottom: 42px;
 }
-.imagen img:not(:last-child) {
-  margin-right: 34px;
+.team-social a:not(:last-child) {
+  margin-right: 10px;
 }
 /*  В наша команда */
 .team-title {
@@ -329,7 +327,7 @@ body {
   flex-direction: column;
 
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   color: var(--primery-text-color);
   text-align: center;
@@ -341,7 +339,7 @@ body {
 }
 /* Навігація соц мереж під Нашою командою */
 .section-profession {
-  margin-bottom: 28px;
+  margin-top: 10px;
 
   color: var(--title-text-color);
   text-align: center;
@@ -380,9 +378,9 @@ body {
   text-decoration: none;
 }
 
-.link-user:hover,
-.link-user:focus {
-  color: var(--href-text-color);
+.team-social-user:hover,
+.team-social-user:focus {
+  background-color: var(--href-text-color);
 }
 /* Постійні кліенти */
 .clients-list :hover,
@@ -395,14 +393,14 @@ body {
 .regular-costumers {
   /* display: block; */
   display: flex;
-
-  width: auto;
-  margin-right: -30px;
 }
-.regular-costumers img {
+
+.regular-costumers a:not(:last-child) {
   margin-right: 30px;
 }
-
+.regular-costumers a {
+  margin-right: 0px;
+}
 /* Ссилки */
 .link:hover,
 .link:focus {
@@ -412,3 +410,4 @@ body {
   color: var(--white-color);
   background-color: var(--hero-bg-color);
 }
+/* Переробити imagen на team-social team-social-link*/
