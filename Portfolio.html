@@ -5,133 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
   <body>
     <!-- Шапка профілю-->
-    <header>
-      <nav>
-        <a href="./index.html">
-          <p class="logo"><span class="letter">Web </span>Studio</p>
+    <header class="page-header">
+      <nav class="container main-nav">
+        <a href="./index.html" class="link">
+          <p class="logo"><span class="accent">Web</span>Studio</p>
         </a>
         <!--Навігація на другі сторінкі-->
-        <ul class="site-nav list">       
-          <li><a href="./index.html" >Studio</a></li>
-          <li><a href="./portfolio.html" class="current">Portfolio</a></li>
-          <li><a href="" >Contacts</a></li>
+        <ul class="site-nav list">
+          <li class="item"><a href="./index.html" class="link ">Studio</a></li>
+          <li class="item"><a href="./portfolio.html"class="link current"  >Portfolio</a></li>
+          <li class="item"><a href="" class="link" >Contacts</a></li>
         </ul>
         <ul class="auth-nav list">
-          <li>
-            <a href="info&#64;devstudio.com"><img src="./imagens/hover.svg" alt="" />
-              info&#64;devstudio.com 
+          <li class="item">
+            <a href="info@devstudio.com" class="link">
+              <!-- <img src="./imagens/hover.svg" alt="" /> -->
+              info@devstudio.com 
             </a>
           </li>
-          <li>
-            <a href="&plus;38-096-111-11-11"
-            ><img src="./imagens/smartphone.svg" alt="" />&plus;380-96-111-11-11 </a
-            >
+          <li class="item">
+            <a href="+38-096-111-11-11" class="link">
+            <!-- <img src="./imagens/smartphone.svg" alt="" />  -->
+            +380-96-111-11-11 </a>
           </li>
         </ul>
       </nav>
     </header>
+    <!-- Main -->
     <main>
-     <div>
-     <button type="button">Все</button> 
-     <button type="button">Веб-сайт</button>
-     <button type="button">Додатки</button>
-     <button type="button">Дизайн</button>
-     <button type="button">Маркетинг</button>
-    </div>
-    <section>
-      <h1>Портфоліо</h1>
-      <ul class="section list">
-        <li>
-          <a href=""><img src="./imagens/img1.jpg" alt="">
-          <h2>Технокряк</h2>
-          <p class="text">Веб-сайт</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img2.jpg" alt="">
-          <h2>Постер New Orlean vs Golden Star</h2>
-          <p class="text">Дизайн</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img3.jpg" alt="">
-          <h2>Ресторан Seafood</h2>
-          <p class="text">Додаток</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img4.jpg" alt="">
-          <h2>Проект Prime</h2>
-          <p class="text">Маркетинг</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img5.jpg" alt="">
-          <h2>Проект Boxes</h2>
-          <p class="text">Додаток</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img6.jpg" alt="">
-          <h2>Inspiration has no Borders</h2>
-          <p class="text">Веб-сайт</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img7.jpg" alt="">
-          <h2>Издание Limited Edition</h2>
-          <p class="text">Дизайн</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img8.jpg" alt="">
-          <h2>Проект LAB</h2>
-          <p class="text">Маркетинг</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-        <li>
-          <a href=""><img src="./imagens/img9.jpg" alt="">
-          <h2>Growing Business</h2>
-          <p class="text">Додаток</p>
-          <p>Технокряк это современная площадка распространения коронавируса.</p>
-        </a></li>
-      </ul>
-    </section>
-    </main>   
-    <!-- Футер-->
-    <footer>
-      <!-- Адресса компанії-->
-      <div>
-        <a href="./index.html">
-          <p><span class="logo">Web </span>Studio</p>
-        </a>
-        <address>г.Киев,пр-т Леси Украинки,26</address>
-        <address>
-          <a href=""> info&#64;exampl.com</a>
-          <a href="">&plus;380-99-111-11-11></a>
-        </address>
+      <section class="our-work link">
+        <div class="container">
+        <h1>Portfolio</h1>
+        <div class="filtre">
+          <button type="button" class="button"> Все</button>
+          <button type="button" class="button"> Веб-сайты</button>
+          <button type="button" class="button"> Приложения</button>
+          <button type="button" class="button"> Дизайн</button>
+          <button type="button" class="button"> Маркетинг</button>
+        </div>
+        <ul class="filtre-work">
+          <li class="filtre-list list">
+            <img src="img-portfolio/hover overlay1.jpg" alt="" width="370px">
+            <h2>Технокряк</h2>
+            <p>Веб-сайт</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов.</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img2.jpg" alt="" width="370px">
+            <h2>Постер New Orlean vs Golden Star</h2>
+            <p>Дизайн</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img3.jpg" alt="" width="370px">
+            <h2>Ресторан Seafood</h2>
+            <p>Приложение</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img4.jpg" alt="" width="370px">
+            <h2>Проект Prime</h2>
+            <p>Маркетинг</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img5.jpg" alt="" width="370px">
+            <h2>Проект Boxes</h2>
+            <p>Приложение</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img6.jpg" alt="" width="370px">
+            <h2>Inspiration has no Borders</h2>
+            <p>Веб-сайт</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img7.jpg" alt="" width="370px">
+            <h2>Издание Limited Edition</h2>
+            <p>Дизайн</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img8.jpg" alt="" width="370px">
+            <h2>Проект LAB</h2>
+            <p>Маркетинг</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+          <li class="filtre-list list">
+            <img src="img-portfolio/img9.jpg" alt="" width="370px">
+            <h2>Growing Business</h2>
+            <p>Приложение</p>
+            <p>Технокряк это современная площадка распространения коронавируса. Компании 
+              используют эту платформу для цифрового шпионажа и атак 
+              на защищённые сервера конкурентов</p>
+          </li>
+        </ul>
       </div>
-      <!--Ссилки на соцмережи-->
-      <div class="footer-media">
-        <p class="call-text">Присоединяйтесь</p>
-        <a href="" aria-label="посилання на Instagram" class="link"
-          >instagram</a
-        >
-        <a href="" aria-label="посилання на Twitter" class="link">Twitter</a>
-        <a href="" aria-label="посилання на Faceboock" class="link"
-          >Faceboock</a
-        >
-        <a href="" aria-label="посилання на LinkedIn" class="link">LinkedIn</a>
-      </div>
-      <!-- Пыдпис на розсилку-->
-      <div class="footer-media">
-        <p class="call-text">Подписатся на рассылку</p>
-        <a href=""> E-mail</a>
-        <a href="" class="button primary">Подписатся</a>
-      </div>
-    </footer>
+      </section>
+    </main>
+       <!-- Футер-->
+       <footer>
+        <!-- Адресса компанії-->
+        <div>
+          <a href="./index.html" class="link">
+            <p class="logo"><span class="accent">Web</span>Studio</p>
+          </a>
+          <address>г.Киев,пр-т Леси Украинки,26</address>
+          <address>
+            <a href=""> info@exampl.com</a>
+            <a href="">+380-99-111-11-11></a>
+          </address>
+        </div>
+        <!--Ссилки на соцмережи-->
+        <div class="social-network">
+          <p class="social-network-text">Присоединяйтесь</p>
+          <a href="" aria-label="посилання на Instagram" class="link"
+            >instagram</a
+          >
+          <a href="" aria-label="посилання на Twitter" class="link">Twitter</a>
+          <a href="" aria-label="посилання на Faceboock" class="link"
+            >Faceboock</a
+          >
+          <a href="" aria-label="посилання на LinkedIn" class="link">LinkedIn</a>
+        </div>
+        <!-- Пыдпис на розсилку-->
+        <div>
+          <p class="social-network-text">Подписатся на рассылку</p>
+          <a href=""> E-mail</a>
+          <a href="" class="button-secondary">Подписатся</a>
+        </div>
+      </footer>
