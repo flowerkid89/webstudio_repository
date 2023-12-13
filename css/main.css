@@ -51,16 +51,16 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1230px;
+  max-width: 1200px;
   /* outline: 2px solid black; */
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid #000000;
 }
 /* Шапка профілю */
-/* .page-header {
-  background-color: #ccc;
-} */
+.page-header {
+  margin-bottom: 200px;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -158,6 +158,8 @@ body {
 /* Секція героя */
 .hero {
   text-align: center;
+
+  margin-bottom: 94px;
 }
 .hero-title {
   margin-top: 0;
@@ -194,7 +196,6 @@ body {
 } */
 .features-item {
   display: flex;
-  background-color: #000000;
 }
 /* .features-item .title {
   margin-bottom: 10px;
@@ -219,14 +220,20 @@ body {
   letter-spacing: 0.42px;
 }
 /* Заголовки  H3 Особливості */
-.title {
+.feature-picture {
+  display: block;
+  width: 270px;
+
+  margin-bottom: 30px;
+}
+.feature-title {
   margin-top: 0;
   margin-bottom: 10px;
 
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 0;
 
-  color: var(--secondary-background-color);
+  color: var(--primery-text-color);
   /* background-color: #000000; */
   font-size: 14px;
   font-weight: 700;
@@ -238,7 +245,7 @@ body {
 .work {
   display: flex;
 
-  width: 1200px;
+  /* width: 1200px; */
   margin-left: auto;
   margin-right: auto;
 }

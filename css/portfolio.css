@@ -52,6 +52,7 @@ body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
   font-family: Roboto, sans-serif;
+  font-style: normal;
 }
 .container {
   margin-left: auto;
@@ -65,6 +66,8 @@ body {
 .main-nav {
   display: flex;
   align-items: center;
+
+  margin-bottom: 94px;
 }
 
 .hidden-header {
@@ -161,6 +164,8 @@ body {
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--href-text-color);
+
+  margin-bottom: 50px;
 }
 .button:hover,
 .button:focus {
@@ -173,6 +178,11 @@ body {
   display: flex;
   justify-content: center;
 }
+/* .filtre-picture {
+  display: block;
+  margin-bottom: 20px;
+} */
+
 .filtre-work {
   display: flex;
   flex-wrap: wrap;
@@ -183,4 +193,22 @@ body {
 .filtre-list {
   width: 370px;
   margin: 15px;
+}
+.filtre-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2; /* 200% */
+  letter-spacing: 1.08px;
+
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.filtre-text {
+  color: var(--title-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9; /* 187.5% */
+  letter-spacing: 0.48px;
+
+  padding-bottom: 20px;
 }
