@@ -55,11 +55,9 @@ body {
   /* outline: 2px solid black; */
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid #000000;
 }
 /* Шапка профілю */
 .page-header {
-  margin-bottom: 200px;
 }
 .main-nav {
   display: flex;
@@ -158,8 +156,10 @@ body {
 /* Секція героя */
 .hero {
   text-align: center;
+  background-color: #000000;
 
-  margin-bottom: 94px;
+  padding-top: 200px;
+  /* padding-bottom: 94px; */
 }
 .hero-title {
   margin-top: 0;
@@ -194,6 +194,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 } */
+
 .features-item {
   display: flex;
 }
@@ -288,6 +289,7 @@ body {
 /* Team */
 .section.team {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
 }
 .team-item {
   display: flex;
@@ -394,7 +396,7 @@ body {
 .clients-list :focus {
   background-color: var(--href-text-color);
 }
-.clients-list.regular {
+.clients-list {
   padding-bottom: 94px;
 }
 .regular-costumers {
@@ -417,4 +419,13 @@ body {
   color: var(--white-color);
   background-color: var(--hero-bg-color);
 }
-/* Переробити imagen на team-social team-social-link*/
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+}
+.social-link {
+  /* display: flex; */
+}

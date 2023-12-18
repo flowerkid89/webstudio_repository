@@ -174,7 +174,7 @@ body {
 .button:not(:last-child) {
   margin-right: 8px;
 }
-.filtre {
+.filter {
   display: flex;
   justify-content: center;
 }
@@ -183,18 +183,18 @@ body {
   margin-bottom: 20px;
 } */
 
-.filtre-work {
+.filter-work {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+
   margin: -15px;
   padding: 0;
 }
-.filtre-list {
+.filter-list {
   width: 370px;
   margin: 15px;
 }
-.filtre-title {
+.filter-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2; /* 200% */
@@ -203,7 +203,7 @@ body {
   margin-top: 20px;
   margin-bottom: 4px;
 }
-.filtre-text {
+.filter-text {
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 400;
