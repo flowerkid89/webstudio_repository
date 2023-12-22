@@ -28,6 +28,11 @@ html {
 }
 .link {
   text-decoration: none;
+  display: block;
+}
+.link:focus,
+.link:hover {
+  background-color: #2196f3;
 }
 img {
   display: block;

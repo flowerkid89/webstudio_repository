@@ -28,6 +28,7 @@ html {
 }
 .link {
   text-decoration: none;
+  color: inherit;
 }
 .link-user {
   text-decoration: none;
@@ -346,6 +347,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
+.team-social-user:hover,
+.team-social-user:focus {
+  background-color: var(--href-text-color);
+  border: 1px solid blue;
+  border-radius: 50%;
+}
 /* Навігація соц мереж під Нашою командою */
 .section-profession {
   margin-top: 10px;
@@ -387,13 +394,9 @@ body {
   text-decoration: none;
 }
 
-.team-social-user:hover,
-.team-social-user:focus {
-  background-color: var(--href-text-color);
-}
 /* Постійні кліенти */
-.clients-list :hover,
-.clients-list :focus {
+.regular-costumers-item :hover,
+.regular-costumers-item :focus {
   background-color: var(--href-text-color);
 }
 .clients-list {
@@ -404,28 +407,37 @@ body {
   display: flex;
 }
 
-.regular-costumers a:not(:last-child) {
+.regular-costumers :not(:last-child) {
   margin-right: 30px;
 }
-.regular-costumers a {
+/* .regular-costumers a {
   margin-right: 0px;
-}
+} */
 /* Ссилки */
-.link:hover,
-.link:focus {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--href-text-color);
+}
+.footer {
+  background-color: var(--hero-bg-color);
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+.footer-wrapper .link {
+  color: rgba(255, 255, 255, 0.603);
 }
 .social-network-text {
   color: var(--white-color);
-  background-color: var(--hero-bg-color);
 }
-.social {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.footer-contacks {
   background-color: #2f303a;
-  color: rgba(255, 255, 255, 0.6);
 }
 .social-link {
   /* display: flex; */
+}
+.footer-logo .logo {
+  color: #ffffff;
 }
