@@ -63,16 +63,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  /* outline: 2px solid black; */
+
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
+}
+.page-header {
+  border-bottom: 2px solid #212121;
 }
 .main-nav {
   display: flex;
   align-items: center;
-
-  margin-bottom: 94px;
 }
 
 .hidden-header {
@@ -166,36 +167,48 @@ body {
 }
 .button {
   display: inline-block;
+  border: transparent;
   border-radius: 4px;
   color: var(--white-color);
   background-color: var(--href-text-color);
+  color: #212121;
 
-  margin-bottom: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
 }
 .button:hover,
 .button:focus {
-  background-color: #000000;
+  background-color: #df2810e3;
 }
 .button:not(:last-child) {
   margin-right: 8px;
 }
+.our-work {
+  padding-top: 100px;
+}
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 /* .filtre-picture {
   display: block;
   margin-bottom: 20px;
 } */
 
-.filter-work {
+.filter-list {
   display: flex;
   flex-wrap: wrap;
 
   margin: -15px;
   padding: 0;
 }
-.filter-list {
+.filter-work {
   width: 370px;
   margin: 15px;
 }
@@ -216,4 +229,62 @@ body {
   letter-spacing: 0.48px;
 
   padding-bottom: 20px;
+}
+/* Футер */
+.footer {
+  background-color: var(--hero-bg-color);
+}
+.footer-wrapper {
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding-top: 60px;
+}
+.footer-wrapper .link {
+  color: rgba(255, 255, 255, 0.603);
+}
+
+.footer-contacks {
+  background-color: #2f303a;
+}
+.contacks-link {
+  margin-bottom: 9px;
+}
+.contacks-link-number {
+  padding-bottom: 60px;
+}
+.footer-social-list {
+  display: flex;
+}
+.social-join {
+  color: var(--white-color);
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-item {
+  border: 0px solid #2196f3;
+  border-radius: 50%;
+}
+.footer-social-item:focus,
+.footer-social-item:hover {
+  background-color: #2196f3;
+}
+.footer-logo .logo {
+  color: #ffffff;
+
+  margin-bottom: 20px;
 }

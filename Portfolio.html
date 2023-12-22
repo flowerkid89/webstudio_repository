@@ -53,10 +53,10 @@
             <button type="button" class="button">Дизайн</button>
             <button type="button" class="button">Маркетинг</button>
           </div>
-          <ul class="filter-work list">
-            <li class="filter-list">
+          <ul class="filter-list list">
+            <li class="filter-work">
               <a href="" class="link">
-                <img src="img-portfolio/hoveroverlay1.jpg" alt="" width="370" />
+                <img src="img-portfolio/img123.jpg" alt="" width="370" />
                 <h2 class="filter-title">Технокряк</h2>
                 <p class="filter-text">Веб-сайт</p>
                 <!-- <p>Технокряк это современная площадка распространения коронавируса. Компании 
@@ -64,7 +64,7 @@
               на защищённые сервера конкурентов.</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img2.jpg" alt="" width="370" />
                 <h2 class="filter-title">Постер New Orlean vs Golden Star</h2>
@@ -74,7 +74,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img3.jpg" alt="" width="370" />
                 <h2 class="filter-title">Ресторан Seafood</h2>
@@ -84,7 +84,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img
                   class="filter-picture"
@@ -99,7 +99,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img5.jpg" alt="" width="370" />
                 <h2 class="filter-title">Проект Boxes</h2>
@@ -109,7 +109,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img6.jpg" alt="" width="370" />
                 <h2 class="filter-title">Inspiration has no Borders</h2>
@@ -119,7 +119,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img7.jpg" alt="" width="370" />
                 <h2 class="filter-title">Издание Limited Edition</h2>
@@ -129,7 +129,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img src="img-portfolio/img8.jpg" alt="" width="370" />
                 <h2 class="filter-title">Проект LAB</h2>
@@ -139,7 +139,7 @@
               на защищённые сервера конкурентов</p> -->
               </a>
             </li>
-            <li class="filter-list">
+            <li class="filter-work">
               <a href="" class="link">
                 <img
                   class="filter-picture"
@@ -159,38 +159,60 @@
       </section>
     </main>
     <!-- Футер-->
-    <footer>
+    <footer class="footer">
       <!-- Адресса компанії-->
       <div class="container">
-        <div>
-          <a href="./index.html" class="link">
-            <p class="logo"><span class="accent">Web </span>Studio</p>
-          </a>
-          <address>г.Киев,пр-т Леси Украинки,26</address>
-          <address>
-            <a href=""> info@exampl.com</a>
-            <a href="">+380-99-111-11-11></a>
-          </address>
-        </div>
-        <!--Ссилки на соцмережи-->
-        <div class="social-network">
-          <p class="social-network-text">Присоединяйтесь</p>
-          <a href="" aria-label="посилання на Instagram" class="link"
-            >instagram</a
-          >
-          <a href="" aria-label="посилання на Twitter" class="link">Twitter</a>
-          <a href="" aria-label="посилання на Faceboock" class="link"
-            >Faceboock</a
-          >
-          <a href="" aria-label="посилання на LinkedIn" class="link"
-            >LinkedIn</a
-          >
-        </div>
-        <!-- Пыдпис на розсилку-->
-        <div>
-          <p class="social-network-text">Подписатся на рассылку</p>
-          <a href=""> E-mail</a>
-          <a href="" class="button-secondary">Подписатся</a>
+        <div class="footer-wrapper">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <a href="./index.html" class="link">
+                <p class="logo"><span class="accent">Web </span>Studio</p>
+              </a>
+            </div>
+            <div class="footer-contacks">
+              <address class="contacks-link">
+                г.Киев,пр-т Леси Украинки,26
+              </address>
+              <address class="contacks-link">
+                <a href="" class="link"> info@exampl.com</a>
+              </address>
+              <address class="contacks-link-number">
+                <a href="" class="link">+380-99-111-11-11</a>
+              </address>
+            </div>
+          </div>
+          <!--Ссилки на соцмережи-->
+          <div class="footer-social">
+            <p class="social-join">Присоединяйтесь</p>
+            <ul class="footer-social-list list">
+              <li class="footer-social-item">
+                <a href="" aria-label="посилання на Instagram" class="link">
+                  <img src="./images/Instagram11.svg" alt=""
+                /></a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" aria-label="посилання на Twitter" class="link">
+                  <img src="./images/Twitter111.svg" alt=""
+                /></a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" aria-label="посилання на Faceboock" class="link">
+                  <img src="./images/faceboock11.svg" alt=""
+                /></a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" aria-label="посилання на LinkedIn" class="link">
+                  <img src="./images/Linkedin111.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Пыдпис на розсилку-->
+          <div class="footer-newsletter">
+            <p class="social-network-text">Подписатся на рассылку</p>
+            <a href="" class="link"> E-mail</a>
+            <a href="" class="button-secondary">Подписатся</a>
+          </div>
         </div>
       </div>
     </footer>
