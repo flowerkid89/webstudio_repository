@@ -89,8 +89,7 @@ body {
   letter-spacing: 1.08px;
 }
 /*спан лого*/
-.page-header {
-}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -243,6 +242,8 @@ body {
 
   margin-top: 20px;
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .filter-text {
   color: var(--title-text-color);
@@ -252,6 +253,8 @@ body {
   letter-spacing: 0.48px;
 
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /* Футер */
 .footer {
