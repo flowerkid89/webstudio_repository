@@ -145,6 +145,21 @@ body {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
+.auth-nav-item::before {
+  display: block;
+  content: '';
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.icon-hover::before {
+  height: 12px;
+  background-image: url('../images/hover.svg');
+}
+.icon-smartphone::before {
+  height: 16px;
+  background-image: url('../images/smartphone.svg');
+}
 .auth-nav-item:hover,
 .auth-nav-item:focus {
   color: var(--href-text-color);
@@ -203,15 +218,36 @@ body {
   display: flex;
 }
 
-.feature-picture-item {
-  border-radius: 4px;
-  background: #f5f4fa;
-  border: none;
-  width: 270px;
-  padding: 25px 100px;
-}
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-item {
+  border-radius: 4px;
+  border: none;
+}
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background: #f5f4fa;
+
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
 }
 .features-text {
   width: 270px;
@@ -228,11 +264,11 @@ body {
   letter-spacing: 0.42px;
 }
 /* Заголовки  H3 Особливості */
-.feature-picture-item {
+/* .feature-picture-item {
   display: block;
 
   margin-bottom: 30px;
-}
+} */
 
 .feature-title {
   margin-top: 0;
@@ -417,13 +453,41 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
+.regular-costumers-item::before {
+  display: block;
+  content: '';
+  height: 92px;
+  width: 170px;
+  /* background-color: #ffffff; */
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 16px 32px;
+}
+.icon-logo1::before {
+  background-image: url('../images/Logo1.svg');
+}
+.icon-logo2::before {
+  background-image: url('../images/Logo2.svg');
+}
+.icon-logo3::before {
+  background-image: url('../images/Logo3.svg');
+}
+.icon-logo4::before {
+  background-image: url('../images/Logo4.svg');
+}
+.icon-logo5::before {
+  background-image: url('../images/Logo5.svg');
+}
+.icon-logo6::before {
+  background-image: url('../images/Logo6.svg');
+}
 .regular-costumers-item:hover,
 .regular-costumers-item:focus {
   background-color: var(--href-text-color);
 }
-.costumers-picture {
-  padding: 16px 32px;
-}
+
 .regular-costumers :not(:last-child) {
   margin-right: 30px;
 }
