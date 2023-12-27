@@ -118,7 +118,7 @@ body {
   letter-spacing: 0.28px;
   text-decoration: none;
 }
-.site-nav .item + .item {
+.site-nav-item + .site-nav-item {
   margin-left: 50px;
 }
 
@@ -131,7 +131,7 @@ body {
   color: var(--href-text-color);
 }
 /* auth-nav */
-.auth-nav .auth-nav-item + .auth-nav-item {
+.auth-nav-item + .auth-nav-item {
   margin-left: 50px;
 }
 .auth-nav {
