@@ -264,6 +264,26 @@ body {
 .button:not(:last-child) {
   margin-right: 8px;
 }
+.button-secondary {
+  display: flex;
+  justify-content: space-around;
+  color: var(--white-color);
+  background-color: var(--href-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  text-decoration: none;
+}
+.button-secondary::after {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/icon_send.png');
+}
 .our-work {
   padding-top: 100px;
   padding-bottom: 94px;
@@ -355,8 +375,8 @@ body {
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 4px;
   padding-left: 24px;
   padding-right: 24px;
 }

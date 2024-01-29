@@ -493,6 +493,8 @@ body {
   text-decoration: none;
 }
 .button-secondary {
+  display: flex;
+  justify-content: space-around;
   color: var(--white-color);
   background-color: var(--href-text-color);
   font-size: 16px;
@@ -500,6 +502,15 @@ body {
   font-weight: 700;
   line-height: 1.88;
   text-decoration: none;
+}
+.button-secondary::after {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/icon_send.png');
 }
 
 /* Постійні кліенти */
