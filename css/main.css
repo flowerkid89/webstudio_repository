@@ -45,6 +45,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+input {
+  border: none;
+  outline: none;
+}
 body {
   color: var(--primery-text-color);
   background-color: var(--white-color);
@@ -678,6 +682,7 @@ body {
 
   margin-bottom: 20px;
 }
+
 /* Форма в футере імейл */
 .form {
   display: flex;
@@ -694,6 +699,9 @@ body {
   text-align: left;
   padding: 15px 16px;
   color: #fff;
+}
+.subscription input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.479);
 }
 
 .social-network-text {
