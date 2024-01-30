@@ -16,8 +16,35 @@
   </head>
   <body>
     <!-- Шапка профілю-->
-   <div class="backdrop is-hidden">
+   <div class="backdrop ">
     <div class="modal">
+        <form class="modal-form">
+           <h2>Оставте свои данные, мы вам перезвоним</h2>
+          <div class="form-group">
+           
+            <label for="name"> Имя</label>
+          <input type="text" name="name" id="name" />           
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-group">
+            <label for="comment">Коментарии</label>
+          <textarea name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="policy" id="policy" >
+            <label for="policy"> Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          </div>
+        </form>
+        
+          <button class="submit" class="js-model-close">
+            <svg class="submit-icon">
+              <use href="./images/close-black.svg"></use>
+            </svg>
+          </button>
+           
       </div>
       </div>
        <header class="page-header">
@@ -69,7 +96,7 @@
       <section class="hero">
         
          <h1 class="hero-title">Эффективные решения </br> для вашего бизнеса</h1>
-        <a href="" class="button"> Заказати послугу</a>
+        <button class="button js-modal-open"> Заказати послугу</button>
        
       </section>
       </div>
@@ -431,5 +458,6 @@
         </div>
       </div>
     </footer>
+    <script></script>
   </body>
 </html>
