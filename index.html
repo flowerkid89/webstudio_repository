@@ -31,19 +31,18 @@
           </div>
           <div class="form-group">
             <label for="comment">Коментарии</label>
-          <textarea name="comment" id="comment"  rows="8" placeholder="Введите текст"></textarea>
+          <textarea name="comment" id="comment"  rows="6" placeholder="Введите текст"></textarea>
           </div>
-          <div>
+          <div class="form-checkbox">
             <input type="checkbox" name="policy" id="policy" >
-            <label for="policy"> Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <label for="policy" > Соглашаюсь с рассылкой и принимаю Условия договора</label>
           </div>
+          <button class="button submit">Отправить</button>
         </form>
         
-          <button class="submit" class="js-model-close">
-            <svg class="submit-icon">
-              <use href="./images/close-black.svg"></use>
-            </svg>
-          </button>
+          <div class="modal-close js-modal-close">
+          </div>
+          
            
       </div>
       </div>
@@ -458,6 +457,23 @@
         </div>
       </div>
     </footer>
-    <script></script>
+    <script>      
+    const openButtom = document.querySelector('.js-modal-open')
+    const closeButton = document.querySelector('.js-modal-close')
+    const backdrop = document.querySelector('.backdrop')
+    openButtom.addEventListener('click', () => {
+      backdrop.classList.toggle('is-hidden')
+    })
+
+    document.addEventListener('click', (e) => {
+      console.log(e.target)
+      if (e.target !== closeButton && e.target !== backdrop) {
+        return
+      }
+      else {
+        backdrop.classList.toggle('is-hidden')
+      }
+       })
+    </script>
   </body>
 </html>

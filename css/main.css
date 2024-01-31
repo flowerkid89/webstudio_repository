@@ -88,6 +88,7 @@ body {
   height: 581px;
   background-color: #fff;
 }
+
 /* Оформление для форм */
 .modal-form {
   position: absolute;
@@ -97,8 +98,9 @@ body {
   margin-right: auto;
 }
 .modal-form h2 {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-top: 40px;
 
   text-align: center;
   font-family: Roboto;
@@ -127,23 +129,62 @@ body {
 .form-group label {
   margin-bottom: 4px;
 }
-.submit {
+.form-checkbox {
+  margin-top: 20px;
+
+  color: #757575;
+
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.modal-close {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 30px;
   height: 30px;
+  border: 1px solid gray;
   border-radius: 50%;
 
-  left: 95%;
+  outline: none;
+
+  left: 94.5%;
   top: 0;
+  margin: 0;
+  padding: 0;
 }
-.submit-icon {
+.modal-close::before {
+  content: '';
+
+  display: block;
   width: 18px;
   height: 18px;
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('..//images/close-black.svg');
 }
-/* textarea {
+textarea {
   resize: none;
-} */
+  padding: 12px 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.submit {
+  position: fixed;
+  margin-top: 30px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -582,6 +623,7 @@ body {
 .button-secondary {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   color: var(--white-color);
   background-color: var(--href-text-color);
