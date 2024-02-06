@@ -1,0 +1,193 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+}
+
+/* Оформление для форм */
+.modal-form {
+  position: absolute;
+  width: 528px;
+  /* outline: 1px solid green; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal-form h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 40px;
+
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.form-group:not(:nth-last-child(4)) {
+  margin-bottom: 28px;
+}
+.form-group {
+  position: relative;
+
+  /* outline: 1px solid tomato; */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-comment {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
+}
+.form-comment label {
+  margin-bottom: 4px;
+}
+.form-group:hover .form-input {
+  border-color: #2196f3;
+}
+.form-group input {
+  /* width: 448px; */
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-left: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.text label {
+  color: rgb(117, 117, 117);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  text-align: left;
+}
+
+.form-checkbox {
+  margin-top: 20px;
+
+  color: #757575;
+
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.modal-close {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+
+  outline: none;
+
+  left: 94.5%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.modal-close::before {
+  content: '';
+
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-size: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('..//images/close-black.svg');
+}
+textarea {
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.modal-form .submit {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 40px;
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: 250ms linear;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-40px);
+}
+
+/* icon для форми */
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  width: 15px;
+  height: 15px;
+
+  transform: translateY(-50%);
+}
+.form-group:hover .icon {
+  fill: #2196f3;
+}
+.form-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  justify-content: center;
+  align-items: center;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+/* .checkbox-icon */
+.checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-image: url('..//images/iconcheck.svg');
+  background-size: contain;
+  background-origin: border-box;
+  background-color: #2196f3;
+}

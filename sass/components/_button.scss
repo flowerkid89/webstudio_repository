@@ -1,0 +1,43 @@
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: var(--white-color);
+  background-color: var(--href-text-color);
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  text-decoration: none;
+}
+.button-secondary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: var(--white-color);
+  background-color: var(--href-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.88;
+  text-decoration: none;
+  margin-left: 12px;
+}
+.button-secondary::after {
+  display: block;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/icon_send.png');
+}
