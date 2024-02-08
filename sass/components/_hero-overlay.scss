@@ -19,6 +19,7 @@
   text-transform: uppercase;
 }
 .overlay {
+  display: $display;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
