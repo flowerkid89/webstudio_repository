@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Шапка профілю-->
-   <div class="backdrop ">
+   <div class="backdrop none">
     <div class="modal">
         <form class="modal-form">
            <h2>Оставте свои данные, мы вам перезвоним</h2>
@@ -75,13 +75,23 @@
           </div>  
       </div>
       </div>
-       <header class="page-header none">
+       <header class="page-header ">
       <nav class="container main-nav">
-        <a area-label="Возврат на главную страницю" href="./index.html" class="link">
+     
+         <a area-label="Возврат на главную страницю" href="./index.html" class="link">
           <p class="logo"><span class="accent">Web</span>Studio</p>
         </a>
+        <button type="button" class="menu-button is-open"> 
+          <svg width="40" height="40" aria-label="Переключатель мобильного менню">
+            <use class="icon-menu" href="./images/symbol-defs3.svg#menu"></use>
+            <!-- <use href="./images/symbol-defs3.svg#close"></use> -->
+          </svg>
+        </button>
+     </div>
         <!--Навігація на другі сторінкі-->
-        <ul class="site-nav list">
+      <div class="menu-container">
+         
+         <ul class="site-nav  list">
           <li class="site-nav-item">
             <a area-label=" Страница Студии" href="./index.html" class="menu-link link current">Студия</a>
           </li>
@@ -90,7 +100,8 @@
           </li>
           <li class="site-nav-item"><a area-label="Страница Контактов" href="" class="menu-link link">Контакты</a></li>
         </ul>
-        <ul class="auth-nav list">
+  <div class="nav-links">
+          <ul class="auth-nav list">
           <li class="auth-nav-item ">
             <div class="auth-nav-icon">
               <svg class="icon-hover">
@@ -109,24 +120,40 @@
               </use>
             </svg>
             </div>
-            <a area-label="Номер телефона +380961111111" href="tel:+380961111111" class=" link">
+            <a  class="auth-nav-number link" area-label="Номер телефона +380961111111" href="tel:+380961111111" class=" link">
              
               +380-96-111-11-11
             </a>
           </li>
         </ul>
+      <ul class="nav-social list ">
+        <li class="nav-social-item link">
+          <a href="" aria-label="ссылка на Instagram"> Instagram</a>
+        </li>
+        <li class="nav-social-item link">
+          <a href="" aria-label="ссылка на Twitter"> Twitter</a>
+        </li>
+        <li class="nav-social-item link">
+          <a href="" aria-label="ссылка на Facebook">Facebook</a>
+        </li>
+        <li class="nav-social-item link">
+          <a href="" aria-label="ссылка на LinkedIn">LinkedIn</a>
+        </li>
+      </ul>
+  </div>
+      </div>
       </nav>
     </header>
     <main>
       <!--Герой сайту-->
-      <div class="overlay">
+      <div class="overlay none" >
       <section class="hero">        
          <h1 class="hero-title">Эффективные решения </br> для вашего бизнеса</h1>
         <button class="button js-modal-open"> Заказати послугу</button>       
       </section>
       </div>  
       <!--Особливості-->
-      <section class="section features  ">
+      <section class="section features none ">
         <div class="container">
           <h2 class="hidden-header">Особливості</h2>
           <ul class="features-list">
@@ -220,7 +247,7 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="section team ">
+      <section class="section team none">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
@@ -332,57 +359,57 @@
         </div>
       </section>
       <!--Постійні клієнти-->
-      <div class="section-clients">
+      <div class="section-clients none">
         <div class="container">
         <h2 class="team-title">Постійні клієнти</h2>        
           <ul class="regular-costumers list">
             <li class="regular-costumers-item ">
-               <div class="regular-image">
+               <a href="" class="regular-link" aria-label="Логотитп компании">
                 <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo1">              
               </use>
              </svg>
-               </div>
+            </a>
             </li>
             <li class="regular-costumers-item ">
-              <div class="regular-image">
+              <a href="" class="regular-link" aria-label="Логотитп компании">
                 <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo2">              
               </use>
              </svg>
-              </div>
+            </a>
             </li>
             <li class="regular-costumers-item ">
-             <div class="regular-image">
+             <a href="" class="regular-link" aria-label="Логотитп компании">
               <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo3">              
               </use> 
              </svg>
-             </div>
+            </a>
             </li>
             <li class="regular-costumers-item ">
-              <div class="regular-image">
+              <a href="" class="regular-link" aria-label="Логотитп компании">
                 <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo4">              
               </use>
              </svg>
-              </div>
+            </a>
             </li>
             <li class="regular-costumers-item ">
-               <div class="regular-image">
+               <a href="" class="regular-link" aria-label="Логотитп компании">
                 <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo5">              
               </use>
              </svg>
-               </div>
+            </a>
             </li>
             <li class="regular-costumers-item ">
-               <div class="regular-image">
+               <a href="" class="regular-link" aria-label="Логотитп компании">
                 <svg class="icon-logo">
               <use href="./images/symbol-defs.svg#icon-Logo6">              
               </use>
              </svg>
-               </div>
+            </a>
               
             </li>
           </ul>
