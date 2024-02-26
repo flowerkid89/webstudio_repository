@@ -3,21 +3,32 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
 
-  width: 528px;
-  height: 581px;
   background-color: #fff;
+
+  @media screen and (min-width: 1140px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 /* Оформление для форм */
 .modal-form {
   position: absolute;
-  width: 528px;
+  // width: 528px;
   /* outline: 1px solid green; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .modal-form h2 {
   margin-top: 0;
@@ -25,8 +36,8 @@
   padding-top: 40px;
 
   text-align: center;
-
   font-size: 20px;
+  // font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -81,7 +92,7 @@
   color: #757575;
 
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71; /* 171.429% */
@@ -100,7 +111,7 @@
 
   outline: none;
 
-  left: 94.5%;
+  left: 93.5%;
   top: 0;
   margin: 0;
   padding: 0;
@@ -163,6 +174,7 @@ textarea {
   /* flex-direction: row-reverse; */
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .checkbox {
   position: absolute;

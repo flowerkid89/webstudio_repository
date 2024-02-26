@@ -2,25 +2,33 @@
 .hero {
   text-align: center;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   color: var(--white-color);
 
   text-align: center;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36; /* 136.364% */
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
 }
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -32,4 +40,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: 768px) {
+    height: 600px;
+  }
 }
