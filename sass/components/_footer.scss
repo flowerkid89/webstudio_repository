@@ -1,17 +1,33 @@
 /* Футер */
 .footer {
   background-color: var(--hero-bg-color);
-  display: $display;
 }
 .footer-wrapper {
   color: #ffffff;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-
+  display: block;
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+
+    // align-items: baseline;
+
+    @media screen and (min-width: 1140px) {
+      justify-content: space-between;
+    }
+  }
+}
+.footer-contacks {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1140px) {
+    margin: 0;
+  }
 }
 .info-link {
   color: rgba(255, 255, 255, 0.6);
@@ -47,9 +63,17 @@
 .contacks-link {
   margin-bottom: 9px;
 }
+.footer-social {
+  margin: 0;
+  margin-bottom: 60px;
 
+  @media screen and (min-width: 1140px) {
+    margin: 0;
+  }
+}
 .footer-social-list {
   display: flex;
+  justify-content: center;
 }
 .social-join {
   color: var(--white-color);
@@ -61,10 +85,13 @@
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-
+  margin: 0;
   margin-bottom: 20px;
 }
-
+.social-network-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
